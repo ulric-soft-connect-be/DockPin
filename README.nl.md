@@ -95,7 +95,7 @@ open "dockpin://settings"             # ook: dockpin://about
 
 ## Problemen oplossen
 
-- **Het Dock springt nog steeds naar andere schermen.** Controleer of DockPin is ingeschakeld in Systeeminstellingen › Privacy en beveiliging › Toegankelijkheid. Verwijder DockPin na een update met de knop **−** uit die lijst en voeg het daarna opnieuw toe.
+- **Het Dock springt nog steeds naar andere schermen.** Controleer of DockPin is ingeschakeld in Systeeminstellingen › Privacy en beveiliging › Toegankelijkheid. Staat het aan maar werkt de vergrendeling nog steeds niet, verwijder DockPin dan met de knop **−** uit die lijst en voeg het daarna opnieuw toe.
 - **Het Dock gaat niet naar het gekozen scherm.** Controleer of ‘Beeldschermen hebben aparte spaces’ is ingeschakeld (Systeeminstellingen › Bureaublad en Dock), en meld je daarna af en weer aan.
 - **Een toetscombinatie werkt niet.** Die wordt waarschijnlijk al door een andere app gebruikt (ze verschijnt in het rood in de instellingen). Kies een andere combinatie.
 

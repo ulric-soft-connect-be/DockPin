@@ -95,7 +95,7 @@ open "dockpin://settings"             # auch: dockpin://about
 
 ## Fehlerbehebung
 
-- **Das Dock springt weiterhin auf andere Bildschirme.** Prüfe, ob DockPin unter Systemeinstellungen › Datenschutz & Sicherheit › Bedienungshilfen eingeschaltet ist. Entferne DockPin nach einem Update mit der Taste **−** aus dieser Liste und füge es dann erneut hinzu.
+- **Das Dock springt weiterhin auf andere Bildschirme.** Prüfe, ob DockPin unter Systemeinstellungen › Datenschutz & Sicherheit › Bedienungshilfen eingeschaltet ist. Ist es eingeschaltet und die Sperre wirkt trotzdem nicht, entferne DockPin mit der Taste **−** aus dieser Liste und füge es dann erneut hinzu.
 - **Das Dock wechselt nicht auf den gewählten Bildschirm.** Prüfe, ob „Monitore verwenden verschiedene Spaces“ eingeschaltet ist (Systemeinstellungen › Schreibtisch & Dock), und melde dich dann ab und wieder an.
 - **Ein Kurzbefehl funktioniert nicht.** Er wird wahrscheinlich bereits von einer anderen App verwendet (er erscheint in den Einstellungen rot). Wähle eine andere Kombination.
 

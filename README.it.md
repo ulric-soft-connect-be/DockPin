@@ -95,7 +95,7 @@ open "dockpin://settings"             # anche: dockpin://about
 
 ## Risoluzione dei problemi
 
-- **Il Dock salta ancora sugli altri schermi.** Verifica che DockPin sia attivato in Impostazioni di Sistema › Privacy e sicurezza › Accessibilità. Dopo un aggiornamento, rimuovi DockPin da quell’elenco con il pulsante **−**, poi aggiungilo di nuovo.
+- **Il Dock salta ancora sugli altri schermi.** Verifica che DockPin sia attivato in Impostazioni di Sistema › Privacy e sicurezza › Accessibilità. Se è attivato ma il blocco continua a non funzionare, rimuovi DockPin da quell’elenco con il pulsante **−**, poi aggiungilo di nuovo.
 - **Il Dock non va sullo schermo scelto.** Verifica che «I monitor hanno spazi separati» sia attivato (Impostazioni di Sistema › Scrivania e Dock), poi esci dalla sessione e accedi di nuovo.
 - **Un’abbreviazione non funziona.** Probabilmente è già usata da un’altra app (appare in rosso nelle impostazioni). Scegli un’altra combinazione.
 

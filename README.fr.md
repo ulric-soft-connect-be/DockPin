@@ -95,7 +95,7 @@ open "dockpin://settings"             # aussi : dockpin://about
 
 ## Dépannage
 
-- **Le Dock saute encore sur les autres écrans.** Vérifiez que DockPin est activé dans Réglages Système › Confidentialité et sécurité › Accessibilité. Après une mise à jour, retirez DockPin de cette liste avec le bouton **−**, puis ajoutez-le de nouveau.
+- **Le Dock saute encore sur les autres écrans.** Vérifiez que DockPin est activé dans Réglages Système › Confidentialité et sécurité › Accessibilité. S’il est activé mais que le verrouillage ne fonctionne toujours pas, retirez DockPin de cette liste avec le bouton **−**, puis ajoutez-le de nouveau.
 - **Le Dock ne va pas sur l’écran choisi.** Vérifiez que « Les écrans disposent d’espaces distincts » est activé (Réglages Système › Bureau et Dock), puis fermez et rouvrez votre session.
 - **Un raccourci ne fonctionne pas.** Il est sans doute déjà utilisé par une autre app (il apparaît en rouge dans les réglages). Choisissez une autre combinaison.
 

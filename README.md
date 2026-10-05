@@ -95,7 +95,7 @@ open "dockpin://settings"             # also: dockpin://about
 
 ## Troubleshooting
 
-- **The Dock still jumps to other screens.** Check that DockPin is turned on in System Settings › Privacy & Security › Accessibility. After an update, remove DockPin from that list with the **−** button, then add it again.
+- **The Dock still jumps to other screens.** Check that DockPin is turned on in System Settings › Privacy & Security › Accessibility. If it is on but locking still doesn’t work, remove DockPin from that list with the **−** button, then add it again.
 - **The Dock doesn’t move to the screen I picked.** Check that “Displays have separate Spaces” is turned on (System Settings › Desktop & Dock), then log out and back in.
 - **A shortcut doesn’t work.** It’s probably already used by another app (it appears in red in the settings). Choose another combination.
 

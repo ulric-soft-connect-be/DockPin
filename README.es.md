@@ -95,7 +95,7 @@ open "dockpin://settings"             # también: dockpin://about
 
 ## Solución de problemas
 
-- **El Dock sigue saltando a otras pantallas.** Comprueba que DockPin está activado en Ajustes del Sistema › Privacidad y seguridad › Accesibilidad. Después de una actualización, quita DockPin de esa lista con el botón **−** y vuelve a añadirlo.
+- **El Dock sigue saltando a otras pantallas.** Comprueba que DockPin está activado en Ajustes del Sistema › Privacidad y seguridad › Accesibilidad. Si está activado pero el bloqueo sigue sin funcionar, quita DockPin de esa lista con el botón **−** y vuelve a añadirlo.
 - **El Dock no va a la pantalla elegida.** Comprueba que «Las pantallas tienen espacios independientes» está activado (Ajustes del Sistema › Escritorio y Dock) y, después, cierra sesión y vuelve a iniciarla.
 - **Un atajo no funciona.** Probablemente ya lo usa otra app (aparece en rojo en los ajustes). Elige otra combinación.
 
