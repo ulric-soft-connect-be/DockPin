@@ -31,6 +31,7 @@ Met meerdere schermen verplaatst macOS het Dock naar het scherm waarvan je de on
 - **Het Dock eenmalig verplaatsen.** Houd **⌥ Option** ingedrukt terwijl je de aanwijzer tegen de onderkant van een ander scherm duwt.
 - **Automatisch terugzetten.** Bij het opstarten, na de sluimerstand en wanneer een scherm wordt aangesloten of losgekoppeld, keert het Dock terug naar zijn scherm.
 - **Presentatiemodus**: verbergt het Dock op alle schermen tijdens het delen van je scherm of een vergadering, en herstelt daarna je instelling.
+- **Ingebouwde updates.** DockPin meldt nieuwe versies en installeert ze met één klik.
 - **Onopvallend.** Geen symbool in het Dock (behalve zolang een DockPin-venster open is), en het menubalksymbool kan worden verborgen.
 - **Zes talen**: Engels, Frans, Duits, Nederlands, Spaans, Italiaans. DockPin volgt standaard de taal van macOS; je kunt die wijzigen in de instellingen.
 
@@ -46,6 +47,12 @@ Met meerdere schermen verplaatst macOS het Dock naar het scherm waarvan je de on
 2. Open de schijfkopie en sleep **DockPin** naar **Programma’s**.
 3. Open DockPin vanuit de map ‘Programma’s’. DockPin is nog niet door Apple notarieel bekrachtigd, dus de eerste keer weigert macOS het te openen. Ga naar **Systeeminstellingen › Privacy en beveiliging**, scrol omlaag, klik naast het bericht over DockPin op **Open toch** en bevestig.
 4. Geef DockPin de **Toegankelijkheid**-rechten wanneer daarom wordt gevraagd (Systeeminstellingen › Privacy en beveiliging › Toegankelijkheid). DockPin heeft die nodig om de aanwijzer aan de schermranden tegen te houden en om het Dock te verplaatsen. De vergrendeling start zodra de toegang is verleend.
+
+## Updates
+
+DockPin zoekt bij het opstarten naar nieuwe versies (uit te schakelen in **Instellingen › Algemeen**), telkens wanneer het venster **Over** opent en met *Zoek naar updates…* (menubalksymbool of DockPin-menu). Is er een versie beschikbaar, klik dan op **Installeer en herstart**: DockPin downloadt ze, controleert dat ze door Soft-Connect is ondertekend, vervangt de app en herstart. De toegankelijkheidstoestemming blijft behouden. DockPin moet in de map Apps staan.
+
+DockPin 1.0.0 kan zichzelf nog niet bijwerken: installeer de volgende versie met de hand, zoals hierboven beschreven.
 
 ## Het Dock-scherm kiezen
 
@@ -70,9 +77,9 @@ Wijzig ze via **Instellingen › Toetscombinaties**: klik op een toetscombinatie
 - **Vergrendeling:** vergrendeling aan of uit, extra toegestane schermen, toets om het Dock tijdelijk te verplaatsen (standaard ⌥ Option), automatisch terugzetten.
 - **Presentatiemodus:** het Dock op alle schermen verbergen.
 - **Toetscombinaties:** zie hierboven.
-- **Algemeen:** taal van de interface, openen bij inloggen, menubalksymbool.
+- **Algemeen:** taal van de interface, openen bij inloggen, menubalksymbool, bij het opstarten naar updates zoeken.
 
-Zolang een DockPin-venster open is (Instellingen, Over), toont DockPin zijn menu in de menubalk van macOS: *Over DockPin*, *Instellingen…*, *Stop DockPin* en het menu *Help*, dat deze pagina opent. macOS staat dat alleen toe voor apps met een symbool in het Dock: het symbool verschijnt dus tijdelijk en verdwijnt wanneer je het venster sluit.
+Zolang een DockPin-venster open is (Instellingen, Over), toont DockPin zijn menu in de menubalk van macOS: *Over DockPin*, *Zoek naar updates…*, *Instellingen…*, *Stop DockPin* en het menu *Help*, dat deze pagina opent. macOS staat dat alleen toe voor apps met een symbool in het Dock: het symbool verschijnt dus tijdelijk en verdwijnt wanneer je het venster sluit.
 
 ## Menubalksymbool verborgen?
 
@@ -101,7 +108,7 @@ open "dockpin://settings"             # ook: dockpin://about
 
 ## Privacy
 
-DockPin verzamelt geen gegevens en maakt geen netwerkverbindingen. Links zoals *Help* worden gewoon in je browser geopend.
+DockPin verzamelt geen gegevens. De enige netwerkverbinding zoekt op GitHub naar updates (bij het opstarten, tenzij je dat uitschakelt, en op verzoek); er worden geen persoonlijke gegevens verstuurd. Links zoals *Help* worden gewoon in je browser geopend.
 
 ## Verwijderen
 

@@ -31,6 +31,7 @@ Bei mehreren Bildschirmen bewegt macOS das Dock auf den Bildschirm, an dessen un
 - **Dock einmalig bewegen.** Halte **⌥ Wahltaste** gedrückt und schiebe den Zeiger an den unteren Rand eines anderen Bildschirms.
 - **Automatische Rückkehr.** Beim Start, nach dem Ruhezustand und wenn ein Bildschirm angeschlossen oder getrennt wird, kehrt das Dock auf seinen Bildschirm zurück.
 - **Präsentationsmodus**: blendet das Dock während einer Bildschirmfreigabe oder eines Meetings auf allen Bildschirmen aus und stellt danach deine Einstellung wieder her.
+- **Integrierte Updates.** DockPin meldet neue Versionen und installiert sie mit einem Klick.
 - **Unauffällig.** Kein Symbol im Dock (außer solange ein DockPin-Fenster geöffnet ist), und das Menüleistensymbol lässt sich ausblenden.
 - **Sechs Sprachen**: Englisch, Französisch, Deutsch, Niederländisch, Spanisch, Italienisch. DockPin folgt standardmäßig der Sprache von macOS; in den Einstellungen kannst du sie ändern.
 
@@ -46,6 +47,12 @@ Bei mehreren Bildschirmen bewegt macOS das Dock auf den Bildschirm, an dessen un
 2. Öffne das Image und ziehe **DockPin** auf **Programme**.
 3. Öffne DockPin im Ordner „Programme“. DockPin ist noch nicht von Apple notariell beglaubigt, daher verweigert macOS beim ersten Mal das Öffnen. Gehe zu **Systemeinstellungen › Datenschutz & Sicherheit**, scrolle nach unten, klicke neben der Meldung zu DockPin auf **Dennoch öffnen** und bestätige.
 4. Erteile DockPin die Berechtigung für **Bedienungshilfen**, wenn du dazu aufgefordert wirst (Systemeinstellungen › Datenschutz & Sicherheit › Bedienungshilfen). DockPin braucht sie, um den Zeiger an den Bildschirmrändern zurückzuhalten und das Dock zu bewegen. Die Sperre startet, sobald die Berechtigung erteilt ist.
+
+## Updates
+
+DockPin sucht beim Start nach neuen Versionen (abschaltbar unter **Einstellungen › Allgemein**), bei jedem Öffnen des Fensters **Über** und mit *Nach Updates suchen …* (Menüleistensymbol oder DockPin-Menü). Ist eine Version verfügbar, klicke auf **Installieren und neu starten**: DockPin lädt sie, prüft, dass sie von Soft-Connect signiert ist, ersetzt die App und startet neu. Die Bedienungshilfen-Berechtigung bleibt erhalten. DockPin muss im Ordner „Programme“ liegen.
+
+DockPin 1.0.0 kann sich noch nicht selbst aktualisieren: Installiere die nächste Version wie oben beschrieben von Hand.
 
 ## Dock-Bildschirm wählen
 
@@ -70,9 +77,9 @@ Bei mehreren Bildschirmen bewegt macOS das Dock auf den Bildschirm, an dessen un
 - **Sperre:** Sperre ein- und ausschalten, zusätzlich erlaubte Bildschirme, Taste zum vorübergehenden Bewegen des Docks (standardmäßig ⌥ Wahltaste), automatische Rückkehr.
 - **Präsentationsmodus:** Dock auf allen Bildschirmen ausblenden.
 - **Tastaturkurzbefehle:** siehe oben.
-- **Allgemein:** Sprache der Oberfläche, beim Anmelden öffnen, Menüleistensymbol.
+- **Allgemein:** Sprache der Oberfläche, beim Anmelden öffnen, Menüleistensymbol, beim Start nach Updates suchen.
 
-Solange ein DockPin-Fenster geöffnet ist (Einstellungen, Über), zeigt DockPin sein Menü in der macOS-Menüleiste: *Über DockPin*, *Einstellungen …*, *DockPin beenden* und das Menü *Hilfe*, das diese Seite öffnet. macOS erlaubt das nur Apps mit einem Dock-Symbol – das Symbol erscheint daher vorübergehend und verschwindet, wenn du das Fenster schließt.
+Solange ein DockPin-Fenster geöffnet ist (Einstellungen, Über), zeigt DockPin sein Menü in der macOS-Menüleiste: *Über DockPin*, *Nach Updates suchen …*, *Einstellungen …*, *DockPin beenden* und das Menü *Hilfe*, das diese Seite öffnet. macOS erlaubt das nur Apps mit einem Dock-Symbol – das Symbol erscheint daher vorübergehend und verschwindet, wenn du das Fenster schließt.
 
 ## Menüleistensymbol ausgeblendet?
 
@@ -101,7 +108,7 @@ open "dockpin://settings"             # auch: dockpin://about
 
 ## Datenschutz
 
-DockPin sammelt keine Daten und baut keine Netzwerkverbindungen auf. Links wie *Hilfe* werden einfach in deinem Browser geöffnet.
+DockPin sammelt keine Daten. Die einzige Netzwerkverbindung sucht auf GitHub nach Updates (beim Start, sofern nicht abgeschaltet, und auf Wunsch); es werden keine persönlichen Informationen gesendet. Links wie *Hilfe* werden einfach in deinem Browser geöffnet.
 
 ## Deinstallation
 

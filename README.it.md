@@ -31,6 +31,7 @@ Con più schermi, macOS sposta il Dock sullo schermo di cui spingi il bordo infe
 - **Spostare il Dock una tantum.** Tieni premuto **⌥ Opzione** mentre spingi il puntatore contro il bordo inferiore di un altro schermo.
 - **Ritorno automatico.** All’avvio, dopo lo stop e quando uno schermo viene collegato o scollegato, il Dock torna sul suo schermo.
 - **Modalità presentazione**: nasconde il Dock su tutti gli schermi durante una condivisione dello schermo o una riunione, poi ripristina la tua impostazione.
+- **Aggiornamenti integrati.** DockPin segnala le nuove versioni e le installa con un clic.
 - **Discreto.** Nessuna icona nel Dock (tranne mentre è aperta una finestra di DockPin), e l’icona nella barra dei menu si può nascondere.
 - **Sei lingue**: inglese, francese, tedesco, olandese, spagnolo e italiano. Per impostazione predefinita DockPin segue la lingua di macOS; puoi cambiarla nelle impostazioni.
 
@@ -46,6 +47,12 @@ Con più schermi, macOS sposta il Dock sullo schermo di cui spingi il bordo infe
 2. Apri l’immagine disco e trascina **DockPin** su **Applicazioni**.
 3. Apri DockPin dalla cartella Applicazioni. DockPin non è ancora autenticato da Apple, quindi la prima volta macOS si rifiuta di aprirlo. Vai in **Impostazioni di Sistema › Privacy e sicurezza**, scorri verso il basso, fai clic su **Apri comunque** accanto al messaggio relativo a DockPin e conferma.
 4. Concedi a DockPin l’autorizzazione **Accessibilità** quando viene richiesta (Impostazioni di Sistema › Privacy e sicurezza › Accessibilità). DockPin ne ha bisogno per trattenere il puntatore ai bordi degli schermi e per spostare il Dock. Il blocco parte non appena l’accesso viene concesso.
+
+## Aggiornamenti
+
+DockPin cerca nuove versioni all’avvio (disattivabile in **Impostazioni › Generali**), a ogni apertura della finestra **Informazioni** e con *Cerca aggiornamenti…* (icona nella barra dei menu o menu DockPin). Quando è disponibile una versione, fai clic su **Installa e riavvia**: DockPin la scarica, verifica che sia firmata da Soft-Connect, sostituisce l’app e si riavvia. Il permesso di Accessibilità viene mantenuto. DockPin deve trovarsi nella cartella Applicazioni.
+
+DockPin 1.0.0 non sa ancora aggiornarsi da solo: installa la versione successiva a mano, come descritto sopra.
 
 ## Scegliere lo schermo del Dock
 
@@ -70,9 +77,9 @@ Modificale in **Impostazioni › Abbreviazioni da tastiera**: fai clic su un’a
 - **Blocco:** attivazione del blocco, schermi aggiuntivi consentiti, tasto per spostare temporaneamente il Dock (⌥ Opzione per impostazione predefinita), ritorno automatico.
 - **Modalità presentazione:** nascondere il Dock su tutti gli schermi.
 - **Abbreviazioni da tastiera:** vedi sopra.
-- **Generali:** lingua dell’interfaccia, apertura al login, icona nella barra dei menu.
+- **Generali:** lingua dell’interfaccia, apertura al login, icona nella barra dei menu, ricerca degli aggiornamenti all’avvio.
 
-Mentre è aperta una finestra di DockPin (Impostazioni, Informazioni), DockPin mostra il suo menu nella barra dei menu di macOS: *Informazioni su DockPin*, *Impostazioni…*, *Esci da DockPin* e il menu *Aiuto*, che apre questa pagina. macOS lo consente solo alle app con un’icona nel Dock: l’icona appare quindi temporaneamente e scompare quando chiudi la finestra.
+Mentre è aperta una finestra di DockPin (Impostazioni, Informazioni), DockPin mostra il suo menu nella barra dei menu di macOS: *Informazioni su DockPin*, *Cerca aggiornamenti…*, *Impostazioni…*, *Esci da DockPin* e il menu *Aiuto*, che apre questa pagina. macOS lo consente solo alle app con un’icona nel Dock: l’icona appare quindi temporaneamente e scompare quando chiudi la finestra.
 
 ## Icona nella barra dei menu nascosta?
 
@@ -101,7 +108,7 @@ open "dockpin://settings"             # anche: dockpin://about
 
 ## Privacy
 
-DockPin non raccoglie dati e non stabilisce connessioni di rete. I link come *Aiuto* si aprono semplicemente nel browser.
+DockPin non raccoglie dati. La sua unica connessione di rete cerca aggiornamenti su GitHub (all’avvio, se non la disattivi, e su richiesta); non viene inviata alcuna informazione personale. I link come *Aiuto* si aprono semplicemente nel browser.
 
 ## Disinstallazione
 

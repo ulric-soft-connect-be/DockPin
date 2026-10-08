@@ -31,6 +31,7 @@ With several displays, macOS moves the Dock to whichever screen you push the poi
 - **Move the Dock just this once.** Hold **⌥ Option** while pushing the pointer against the bottom of another screen.
 - **Automatic return.** At startup, after sleep and when a screen is connected or disconnected, the Dock goes back to its screen.
 - **Presentation mode** hides the Dock on every screen during screen sharing or meetings, then restores your setting.
+- **Built-in updates.** DockPin tells you about new versions and installs them in one click.
 - **Discreet.** No Dock icon (except while a DockPin window is open), and the menu bar icon can be hidden.
 - **Six languages**: English, French, German, Dutch, Spanish, Italian. DockPin follows the macOS language by default; you can change it in the settings.
 
@@ -46,6 +47,12 @@ With several displays, macOS moves the Dock to whichever screen you push the poi
 2. Open the disk image and drag **DockPin** onto **Applications**.
 3. Open DockPin from the Applications folder. DockPin is not yet notarized by Apple, so the first time macOS refuses to open it. Go to **System Settings › Privacy & Security**, scroll down, click **Open Anyway** next to the DockPin message, and confirm.
 4. Give DockPin the **Accessibility** permission when asked (System Settings › Privacy & Security › Accessibility). DockPin needs it to hold the pointer back at the screen edges and to move the Dock. Locking starts as soon as the permission is granted.
+
+## Updates
+
+DockPin checks for new versions at launch (can be turned off in **Settings › General**), each time the **About** window opens, and with *Check for Updates…* (menu bar icon or DockPin menu). When a version is available, click **Install and Relaunch**: DockPin downloads it, checks that it is signed by Soft-Connect, replaces the app and relaunches. The Accessibility permission is kept. DockPin must be in the Applications folder.
+
+DockPin 1.0.0 cannot update itself yet: install the next version manually, as described above.
 
 ## Choosing the Dock screen
 
@@ -70,9 +77,9 @@ Change them in **Settings › Keyboard Shortcuts**: click a shortcut and type th
 - **Locking:** turn locking on or off, extra screens allowed, key to move the Dock temporarily (⌥ Option by default), automatic return.
 - **Presentation Mode:** hide the Dock on every screen.
 - **Keyboard Shortcuts:** see above.
-- **General:** interface language, open at login, menu bar icon.
+- **General:** interface language, open at login, menu bar icon, check for updates at launch.
 
-While a DockPin window is open (Settings, About), DockPin shows its menu in the macOS menu bar: *About DockPin*, *Settings…*, *Quit DockPin* and the *Help* menu, which opens this page. macOS only allows this for apps that have a Dock icon, so the icon appears temporarily and disappears when you close the window.
+While a DockPin window is open (Settings, About), DockPin shows its menu in the macOS menu bar: *About DockPin*, *Check for Updates…*, *Settings…*, *Quit DockPin* and the *Help* menu, which opens this page. macOS only allows this for apps that have a Dock icon, so the icon appears temporarily and disappears when you close the window.
 
 ## Menu bar icon hidden?
 
@@ -101,7 +108,7 @@ open "dockpin://settings"             # also: dockpin://about
 
 ## Privacy
 
-DockPin collects no data and makes no network connections. Links such as *Help* simply open in your browser.
+DockPin collects no data. Its only network connection checks for updates on GitHub (at launch unless you turn it off, and on request); no personal information is sent. Links such as *Help* simply open in your browser.
 
 ## Uninstall
 

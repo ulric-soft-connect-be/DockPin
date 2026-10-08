@@ -31,6 +31,7 @@ Con varias pantallas, macOS mueve el Dock a la pantalla cuyo borde inferior empu
 - **Mover el Dock solo esta vez.** Mantén pulsada **⌥ Opción** mientras empujas el puntero contra la parte inferior de otra pantalla.
 - **Vuelta automática.** Al arrancar, al salir del reposo y cuando se conecta o desconecta una pantalla, el Dock vuelve a su pantalla.
 - **Modo presentación**: oculta el Dock en todas las pantallas mientras compartes pantalla o estás en una reunión, y después restablece tu ajuste.
+- **Actualizaciones integradas.** DockPin avisa de las nuevas versiones y las instala con un clic.
 - **Discreto.** Sin icono en el Dock (salvo mientras hay una ventana de DockPin abierta), y el icono de la barra de menús se puede ocultar.
 - **Seis idiomas**: inglés, francés, alemán, neerlandés, español e italiano. Por omisión, DockPin usa el idioma de macOS; puedes cambiarlo en los ajustes.
 
@@ -46,6 +47,12 @@ Con varias pantallas, macOS mueve el Dock a la pantalla cuyo borde inferior empu
 2. Abre la imagen de disco y arrastra **DockPin** a **Aplicaciones**.
 3. Abre DockPin desde la carpeta Aplicaciones. DockPin aún no está notarizado por Apple, así que la primera vez macOS se niega a abrirlo. Ve a **Ajustes del Sistema › Privacidad y seguridad**, desplázate hacia abajo, haz clic en **Abrir igualmente** junto al mensaje sobre DockPin y confirma.
 4. Concede a DockPin el permiso de **Accesibilidad** cuando te lo pida (Ajustes del Sistema › Privacidad y seguridad › Accesibilidad). DockPin lo necesita para retener el puntero en los bordes de las pantallas y para mover el Dock. El bloqueo empieza en cuanto se concede el permiso.
+
+## Actualizaciones
+
+DockPin busca nuevas versiones al iniciarse (se puede desactivar en **Ajustes › General**), cada vez que se abre la ventana **Acerca de** y con *Buscar actualizaciones…* (icono de la barra de menús o menú DockPin). Cuando hay una versión disponible, haz clic en **Instalar y reiniciar**: DockPin la descarga, comprueba que está firmada por Soft-Connect, sustituye la app y se reinicia. El permiso de Accesibilidad se conserva. DockPin debe estar en la carpeta Aplicaciones.
+
+DockPin 1.0.0 todavía no puede actualizarse solo: instala la siguiente versión a mano, como se indica arriba.
 
 ## Elegir la pantalla del Dock
 
@@ -70,9 +77,9 @@ Cámbialos en **Ajustes › Atajos de teclado**: haz clic en un atajo y escribe 
 - **Bloqueo:** activar o desactivar el bloqueo, pantallas adicionales permitidas, tecla para mover el Dock temporalmente (⌥ Opción por omisión), vuelta automática.
 - **Modo presentación:** ocultar el Dock en todas las pantallas.
 - **Atajos de teclado:** ver más arriba.
-- **General:** idioma de la interfaz, abrir al iniciar sesión, icono de la barra de menús.
+- **General:** idioma de la interfaz, abrir al iniciar sesión, icono de la barra de menús, buscar actualizaciones al iniciar.
 
-Mientras hay una ventana de DockPin abierta (Ajustes, Acerca de), DockPin muestra su menú en la barra de menús de macOS: *Acerca de DockPin*, *Ajustes…*, *Salir de DockPin* y el menú *Ayuda*, que abre esta página. macOS solo lo permite a las apps con icono en el Dock, así que el icono aparece temporalmente y desaparece al cerrar la ventana.
+Mientras hay una ventana de DockPin abierta (Ajustes, Acerca de), DockPin muestra su menú en la barra de menús de macOS: *Acerca de DockPin*, *Buscar actualizaciones…*, *Ajustes…*, *Salir de DockPin* y el menú *Ayuda*, que abre esta página. macOS solo lo permite a las apps con icono en el Dock, así que el icono aparece temporalmente y desaparece al cerrar la ventana.
 
 ## ¿Icono de la barra de menús oculto?
 
@@ -101,7 +108,7 @@ open "dockpin://settings"             # también: dockpin://about
 
 ## Privacidad
 
-DockPin no recopila datos ni establece conexiones de red. Los enlaces como *Ayuda* simplemente se abren en tu navegador.
+DockPin no recopila datos. Su única conexión de red busca actualizaciones en GitHub (al iniciarse, salvo que la desactives, y cuando lo pides); no se envía ninguna información personal. Los enlaces como *Ayuda* simplemente se abren en tu navegador.
 
 ## Desinstalación
 

@@ -31,6 +31,7 @@ Avec plusieurs écrans, macOS déplace le Dock sur l’écran dont vous poussez 
 - **Déplacer le Dock ponctuellement.** Maintenez **⌥ Option** en poussant le curseur en bas d’un autre écran.
 - **Retour automatique.** Au démarrage, au réveil et au branchement ou débranchement d’un écran, le Dock revient sur son écran.
 - **Mode présentation** : masque le Dock sur tous les écrans pendant un partage d’écran ou une réunion, puis rétablit votre réglage.
+- **Mises à jour intégrées.** DockPin signale les nouvelles versions et les installe en un clic.
 - **Discret.** Pas d’icône dans le Dock (sauf pendant qu’une fenêtre de DockPin est ouverte), et l’icône de la barre des menus peut être masquée.
 - **Six langues** : anglais, français, allemand, néerlandais, espagnol, italien. DockPin suit la langue de macOS par défaut ; vous pouvez la changer dans les réglages.
 
@@ -46,6 +47,12 @@ Avec plusieurs écrans, macOS déplace le Dock sur l’écran dont vous poussez 
 2. Ouvrez l’image disque et glissez **DockPin** sur **Applications**.
 3. Ouvrez DockPin depuis le dossier Applications. DockPin n’est pas encore notarisé par Apple : la première fois, macOS refuse de l’ouvrir. Allez dans **Réglages Système › Confidentialité et sécurité**, faites défiler, cliquez sur **Ouvrir quand même** à côté du message concernant DockPin, puis confirmez.
 4. Accordez l’autorisation **Accessibilité** quand elle est demandée (Réglages Système › Confidentialité et sécurité › Accessibilité). DockPin en a besoin pour retenir le curseur au bord des écrans et pour déplacer le Dock. Le verrouillage démarre dès que l’accès est accordé.
+
+## Mises à jour
+
+DockPin recherche les nouvelles versions au démarrage (désactivable dans **Réglages › Général**), à chaque ouverture de la fenêtre **À propos** et avec *Rechercher les mises à jour…* (icône de la barre des menus ou menu DockPin). Quand une version est disponible, cliquez sur **Installer et redémarrer** : DockPin la télécharge, vérifie qu’elle est signée par Soft-Connect, remplace l’app et redémarre. L’autorisation Accessibilité est conservée. DockPin doit se trouver dans le dossier Applications.
+
+DockPin 1.0.0 ne sait pas encore se mettre à jour : installez la version suivante à la main, comme indiqué ci-dessus.
 
 ## Choisir l’écran du Dock
 
@@ -70,9 +77,9 @@ Modifiez-les dans **Réglages › Raccourcis clavier** : cliquez sur un raccourc
 - **Verrouillage :** activation, écrans supplémentaires autorisés, touche pour déplacer le Dock ponctuellement (⌥ Option par défaut), retour automatique.
 - **Mode présentation :** masquer le Dock sur tous les écrans.
 - **Raccourcis clavier :** voir ci-dessus.
-- **Général :** langue de l’interface, ouverture à la connexion, icône de la barre des menus.
+- **Général :** langue de l’interface, ouverture à la connexion, icône de la barre des menus, recherche des mises à jour au démarrage.
 
-Pendant qu’une fenêtre de DockPin est ouverte (Réglages, À propos), DockPin affiche son menu dans la barre des menus de macOS : *À propos de DockPin*, *Réglages…*, *Quitter DockPin* et le menu *Aide*, qui ouvre cette page. macOS ne le permet qu’aux apps qui ont une icône dans le Dock : l’icône apparaît donc le temps que la fenêtre est ouverte, puis disparaît.
+Pendant qu’une fenêtre de DockPin est ouverte (Réglages, À propos), DockPin affiche son menu dans la barre des menus de macOS : *À propos de DockPin*, *Rechercher les mises à jour…*, *Réglages…*, *Quitter DockPin* et le menu *Aide*, qui ouvre cette page. macOS ne le permet qu’aux apps qui ont une icône dans le Dock : l’icône apparaît donc le temps que la fenêtre est ouverte, puis disparaît.
 
 ## Icône de la barre des menus masquée ?
 
@@ -101,7 +108,7 @@ open "dockpin://settings"             # aussi : dockpin://about
 
 ## Confidentialité
 
-DockPin ne collecte aucune donnée et n’établit aucune connexion réseau. Les liens comme *Aide* s’ouvrent simplement dans votre navigateur.
+DockPin ne collecte aucune donnée. Sa seule connexion réseau sert à rechercher les mises à jour sur GitHub (au démarrage, sauf si vous la désactivez, et à la demande) ; aucune information personnelle n’est envoyée. Les liens comme *Aide* s’ouvrent simplement dans votre navigateur.
 
 ## Désinstallation
 
